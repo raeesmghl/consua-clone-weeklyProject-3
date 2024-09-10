@@ -1,0 +1,15 @@
+
+
+header{
+    height: 200vh;
+    width: 100%;
+    background-image: url(/assets/hero-bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#header-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
