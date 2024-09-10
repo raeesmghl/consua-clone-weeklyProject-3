@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --red : #DF0A0A;
+    --white : #fff;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+body{
+    /* background-color: rgb(255, 165, 165); */
+}
+
+
+
+
+.non-active-nav{
+    translate: 0 -100%;
+}
+
+
+
