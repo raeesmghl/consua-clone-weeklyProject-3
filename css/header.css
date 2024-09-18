@@ -1,0 +1,202 @@
+header {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+    overflow: hidden;
+}
+
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    color: white;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0 7rem;
+
+}
+
+.swiper-slide-1 {
+    background-image: url(/assets/hero-bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: exclusion;
+
+}
+
+.swiper-slide-2 {
+    background-image: url(/assets/hero-bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/* Customize the pagination bullets */
+.swiper-pagination-bullet {
+    width: 3rem; /* Width of pagination bullet */
+    height: .25rem; /* Height of pagination bullet */
+    background-color: #838383; /* Default bullet color */
+    opacity: 1; /* Fully visible */
+    border-radius: 50px; /* Make them round */
+    margin: 0 5px; /* Space between bullets */
+    transition: background-color 0.3s ease; /* Smooth color change */
+  }
+  
+  /* Change style for the active pagination bullet */
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff; /* Active bullet color */
+  }
+  
+  /* Optional: Hover effect on bullets */
+  .swiper-pagination-bullet:hover {
+    background-color: #d4d4d4; /* Color on hover */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-main-content{
+    max-width: 600px;
+
+    translate: 40% 15%;   
+}
+.header-main-content >p{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.header-main-content > h1{
+    font-weight: 500;
+    font-size: 4rem;
+    text-transform: capitalize;
+    line-height: 4rem;
+    margin: 1rem 0 2rem;
+}
+
+
+
+
+
+
+
+/* customize services button */
+.our-services-btn{
+    cursor: pointer;
+    position: relative;
+}
+
+
+.our-services-btn>i{
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: -100% -50%;
+    scale: 0;
+    transition: .5s ease all;
+
+}
+
+.our-services-btn:hover i{
+    scale: 1;
+    translate: 0% -50%;
+}
+
+
+
+.our-services-btn > p{
+    text-transform: capitalize;
+    position: relative;
+    
+    transition: .5s ease all;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+.our-services-btn > p::before{
+    content: '';
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 1px solid ;
+    position: absolute;
+    top: 50%;
+    translate: -20% -50%;
+    border-radius: 50%;
+    transition: .5s ease all;
+
+}
+
+.our-services-btn:hover p {
+    translate: 4rem;
+}
+
+.our-services-btn:hover p::before{
+    translate: -100% -50%;
+    scale: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1150px) {
+    .header-main-content{
+        width: 100%;
+        max-width: 100%;
+    
+        translate: 0 0;
+    
+    }
+}
+@media screen and (max-width: 640px) {
+    .swiper-slide {
+        padding: 0 2rem;
+    
+    }
+
+    .header-main-content > h1{
+        font-size: 3rem;
+        line-height: auto;
+    }
+    
+}

@@ -1,0 +1,169 @@
+
+
+
+
+#team-section {
+    background-color: #F7F7F7;
+
+    background-image: url(/assets/18.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.team-members-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    margin-top: 7rem;
+
+}
+
+
+.member-image {
+    overflow: hidden;
+    position: relative;
+    height: 90%;
+
+    transition: .5s ease all;
+}
+
+
+
+.member-image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100%;
+    right: 100%;
+    rotate: calc(135deg);
+    transition: .3s linear all;
+    transition-delay: .1s;
+    opacity: 0;
+}
+
+.member-image::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);
+    top: 100%;
+    left: 100%;
+    rotate: calc(135deg);
+    transition: .3s linear all;
+    transition-delay: .3s;
+    opacity: 0;
+}
+
+
+.member-image:hover::before {
+    top: 50%;
+    right: 50%;
+    opacity: 1;
+}
+
+.member-image:hover::after {
+    top: 70%;
+    left: 60%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.member-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.member-media-icons {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 2%;
+    left: 0;
+    background-color: red;
+    color: white;
+    display: flex;
+    padding: .5rem;
+    gap: 1.5rem;
+
+    translate: -100%;
+    opacity: 0;
+
+    transition: .4s ease all;
+}
+
+
+
+.member:hover .member-media-icons {
+    opacity: 1;
+    translate: 0%;
+}
+
+
+
+
+
+.member-info>p {
+    color: gray;
+}
+
+.member-info>h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:950px) {
+
+    .team-members-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .member-image {
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .team-members-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+
+    }
+
+    .member{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .member-image{
+        width: 70%;
+    }
+
+}

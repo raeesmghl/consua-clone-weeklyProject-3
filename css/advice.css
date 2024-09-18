@@ -1,0 +1,94 @@
+
+
+#business-advice-section {
+    background-image: url(/assets/7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+
+}
+
+
+.business-heading {}
+
+.business-heading>h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.business-heading>button {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 200px;
+}
+
+
+
+
+
+
+.business-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    padding: 0 2rem;
+    border-left: .125rem solid white;
+}
+
+.business-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.business-item>img{
+    width: 5rem;
+}
+
+
+.item-info{
+    color: white;
+}
+
+.item-info>h4{
+    font-size: 3rem;
+}
+.item-info>p{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+@media screen and (min-width:1880px) {
+    #business-advice-section {
+        justify-content: center;
+        gap: 20rem;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #business-advice-section {
+        flex-direction: column;
+        gap: 10rem;
+    }
+    
+}

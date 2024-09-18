@@ -1,0 +1,126 @@
+
+
+
+#support-section{
+    width: 100%;
+    background-image: url(/assets/7.jpg);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1980px;
+    overflow: hidden;
+}
+
+.support-skew-element{
+    transform: skew(-10deg);
+    background-color: #1D2027;
+    width: 60%;
+    translate: -10%;
+}
+
+
+
+.support-text-content{
+
+    transform: skew(10deg);
+    color: white;
+
+    padding: 6rem 12rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.support-heading{
+    font-size: 2.25rem;
+    font-weight: 500;
+    width: 90%;
+
+}
+
+.support-main-content{
+    border-left: .375rem solid red;
+    padding-left: 1.25rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.support-main-content>div>h4{
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+.support-main-content>div>p{
+    color: #868686;
+}
+
+
+#support-section>h2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: .75;
+}
+
+
+
+
+@media screen and (max-width:1280px) {
+    #support-section{
+        background-size: cover;
+        background-position: center left;
+    }
+}
+
+
+@media screen and (max-width:1150px) {
+    #support-section{
+        background-image: none;
+        width: 100%;
+        background-color: #1D2027;
+    }
+
+    .support-skew-element{
+        width: 100%;
+        transform: skew(0deg);
+        translate: 0%;
+    }
+    .support-text-content{
+        transform: skew(0deg);
+        width: 100%;
+        padding: 4rem 6rem;
+    }
+
+    .support-heading{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .support-text-content{
+        padding: 4rem;
+    }
+    
+}
+
+@media screen and (max-width:640px) {
+    .support-text-content{
+        padding: 4rem 2rem;
+    }
+    #support-section>h2{
+        font-size: 3rem;
+    }
+    
+}
