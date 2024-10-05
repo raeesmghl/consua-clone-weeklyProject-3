@@ -24,6 +24,14 @@ function checkVisibility() {
 window.addEventListener('scroll', checkVisibility);
 
 
+
+
+
+
+
+
+
+
 // copied from chatgpt (clean code)
 let menuBtns = document.querySelectorAll('.ri-menu-line.menu-btn');
 let slideMenu = document.getElementById('slide-menu');
