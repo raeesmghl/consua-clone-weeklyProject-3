@@ -24,35 +24,6 @@ function checkVisibility() {
 window.addEventListener('scroll', checkVisibility);
 
 
-
-
-
-
-
-
-
-// let menuBtns = document.querySelectorAll('.ri-menu-line.menu-btn');
-
-// let slideMenu = document.getElementById('slide-menu');
-
-// let slideClose = document.getElementById('slide-close');
-
-
-// function showSideMenu() {
-//     slideMenu.classList.remove('menu-non-active');
-// }
-
-// function hideSideMenu() {
-//     slideMenu.classList.add('menu-non-active');
-// }
-
-// menuBtns.forEach((btn) => {
-//     btn.addEventListener('click',showSideMenu)
-// })
-
-// slideClose.addEventListener('click',hideSideMenu);
-
-
 // copied from chatgpt (clean code)
 let menuBtns = document.querySelectorAll('.ri-menu-line.menu-btn');
 let slideMenu = document.getElementById('slide-menu');
